@@ -1,1 +1,4 @@
-shannon.rep/idata/00/~00000000.db/db.10.gbf
+# Base Ghidra (~1,1 Go, nom variable db.*.gbf) : jamais versionnee,
+# telechargee par download_shannon.sh (SHANNON_GHIDRA_DB_URL).
+shannon.rep/idata/**/~*.db/
+shannon.rep/idata/**/db.*.gbf
