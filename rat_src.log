@@ -1,0 +1,75 @@
+openjdk version "21.0.12.1" 2026-08-18
+OpenJDK Runtime Environment (build 21.0.12.1+1-1-24.04.4-Ubuntu)
+OpenJDK 64-Bit Server VM (build 21.0.12.1+1-1-24.04.4-Ubuntu, mixed mode)
+INFO  Using log config file: jar:file:/opt/ghidra_home/Ghidra/Framework/Generic/lib/Generic.jar!/generic.log4j.xml (LoggingInitialization)  
+INFO  Using log file: /root/.config/ghidra/ghidra_12.1.4_PUBLIC/application.log (LoggingInitialization)  
+INFO  Loading user preferences: /root/.config/ghidra/ghidra_12.1.4_PUBLIC/preferences (Preferences)  
+INFO  Searching for classes... (ClassSearcher)  
+INFO  Class search complete (394 ms) (ClassSearcher)  
+INFO  Initializing SSL Context (DefaultSSLContextInitializer)  
+INFO  Initializing Random Number Generator... (SecureRandomFactory)  
+INFO  Random Number Generator initialization complete: NativePRNGNonBlocking (SecureRandomFactory)  
+INFO  Trust manager disabled, cacerts have not been set (DefaultTrustManagerFactory)  
+INFO  Headless startup complete (966 ms) (AnalyzeHeadless)  
+INFO  Class searcher loaded 59 extension points (20 false positives) (ClassSearcher)  
+INFO  HEADLESS Script Paths:
+    /opt/ghidra_home/Ghidra/Processors/DATA/ghidra_scripts
+    /opt/ghidra_home/Ghidra/Features/VersionTracking/ghidra_scripts
+    /opt/ghidra_home/Ghidra/Features/BytePatterns/ghidra_scripts
+    /opt/ghidra_home/Ghidra/Features/Base/ghidra_scripts
+    /opt/ghidra_home/Ghidra/Features/DecompilerDependent/ghidra_scripts
+    /opt/ghidra_home/Ghidra/Features/FunctionID/ghidra_scripts
+    /opt/ghidra_home/Ghidra/Features/SystemEmulation/ghidra_scripts
+    /opt/GSM/shannon_ghidra_scripts
+    /opt/ghidra_home/Ghidra/Features/Decompiler/ghidra_scripts
+    /opt/ghidra_home/Ghidra/Processors/Atmel/ghidra_scripts
+    /opt/ghidra_home/Ghidra/Debug/Debugger-rmi-trace/ghidra_scripts
+    /opt/ghidra_home/Ghidra/Debug/Debugger/ghidra_scripts
+    /opt/ghidra_home/Ghidra/Features/BSim/ghidra_scripts
+    /opt/ghidra_home/Ghidra/Processors/8051/ghidra_scripts
+    /opt/ghidra_home/Ghidra/Processors/JVM/ghidra_scripts
+    /opt/ghidra_home/Ghidra/Processors/PIC/ghidra_scripts
+    /opt/ghidra_home/Ghidra/Features/FileFormats/ghidra_scripts
+    /opt/ghidra_home/Ghidra/Features/PyGhidra/ghidra_scripts
+    /opt/ghidra_home/Ghidra/Features/MicrosoftCodeAnalyzer/ghidra_scripts
+    /opt/ghidra_home/Ghidra/Features/GnuDemangler/ghidra_scripts
+    /opt/ghidra_home/Ghidra/Features/PDB/ghidra_scripts
+    /opt/ghidra_home/Ghidra/Features/WildcardAssembler/ghidra_scripts
+    /opt/ghidra_home/Ghidra/Features/SwiftDemangler/ghidra_scripts (HeadlessAnalyzer)  
+INFO  HEADLESS: execution starts (HeadlessAnalyzer)  
+INFO  Opening existing project: /opt/GSM/shannon_ghidra_proj/shannon (HeadlessAnalyzer)  
+INFO  Opening project: /opt/GSM/shannon_ghidra_proj/shannon (HeadlessProject)  
+INFO  REPORT: Processing project file: /shannon_main.bin (HeadlessAnalyzer)  
+INFO  REPORT: Execute script: rat_src.java  (HeadlessAnalyzer)  
+INFO  SCRIPT: /opt/GSM/shannon_ghidra_scripts/rat_src.java (HeadlessAnalyzer)  
+INFO  rat_src.java> ==== RAT-SRC REPORT ==== (GhidraScript)  
+INFO  rat_src.java> function: FUN_40e4f0ba @ 40e4f0ba (GhidraScript)  
+INFO  rat_src.java> 
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+
+void FUN_40e4f0ba(void)
+
+{
+  byte bVar1;
+  undefined4 uVar2;
+  undefined4 local_10;
+  int local_c;
+  
+  bVar1 = *_DAT_40e4f37c;
+  if (bVar1 < 2) {
+    local_10 = _DAT_40e4f3a0;
+    local_c = _DAT_40e4f378 + -2 + (uint)bVar1 * 0x40000;
+    uVar2 = FUN_40e4f0aa(*(undefined1 *)(_DAT_40e4f380 + (short)(ushort)bVar1 * 0x27c4));
+    FUN_4057d632(&local_10,uVar2,_DAT_40e4f384);
+  }
+  return;
+}
+
+ (GhidraScript)  
+INFO  rat_src.java> 
+-- callers -- (GhidraScript)  
+INFO  rat_src.java>   40ae14ec -> FUN_40ae14c2 @ 40ae14c2 (GhidraScript)  
+INFO  rat_src.java>   40ac5d6a -> FUN_40ac5d5a @ 40ac5d5a (GhidraScript)  
+INFO  rat_src.java>   40afe0a6 -> FUN_40afe09e @ 40afe09e (GhidraScript)  
+INFO  rat_src.java> ==== END ==== (GhidraScript)  
+INFO  REPORT: Save succeeded for processed file: /shannon_main.bin (HeadlessAnalyzer)  

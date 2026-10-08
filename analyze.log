@@ -1,0 +1,125 @@
+openjdk version "21.0.12.1" 2026-08-18
+OpenJDK Runtime Environment (build 21.0.12.1+1-1-24.04.4-Ubuntu)
+OpenJDK 64-Bit Server VM (build 21.0.12.1+1-1-24.04.4-Ubuntu, mixed mode)
+INFO  Using log config file: jar:file:/opt/ghidra_home/Ghidra/Framework/Generic/lib/Generic.jar!/generic.log4j.xml (LoggingInitialization)  
+INFO  Using log file: /root/.config/ghidra/ghidra_12.1.4_PUBLIC/application.log (LoggingInitialization)  
+INFO  Loading user preferences: /root/.config/ghidra/ghidra_12.1.4_PUBLIC/preferences (Preferences)  
+INFO  Searching for classes... (ClassSearcher)  
+INFO  Class search complete (690 ms) (ClassSearcher)  
+INFO  Initializing SSL Context (DefaultSSLContextInitializer)  
+INFO  Initializing Random Number Generator... (SecureRandomFactory)  
+INFO  Random Number Generator initialization complete: NativePRNGNonBlocking (SecureRandomFactory)  
+INFO  Trust manager disabled, cacerts have not been set (DefaultTrustManagerFactory)  
+INFO  Starting cache cleanup: /var/tmp/root-ghidra/fscache2 (FileCacheMaintenanceDaemon)  
+INFO  Finished cache cleanup, estimated storage used: 0 (FileCacheMaintenanceDaemon)  
+INFO  Headless startup complete (1836 ms) (AnalyzeHeadless)  
+INFO  Class searcher loaded 211 extension points (114 false positives) (ClassSearcher)  
+INFO  HEADLESS Script Paths:
+    /opt/ghidra_home/Ghidra/Processors/DATA/ghidra_scripts
+    /opt/ghidra_home/Ghidra/Features/VersionTracking/ghidra_scripts
+    /opt/ghidra_home/Ghidra/Features/BytePatterns/ghidra_scripts
+    /opt/ghidra_home/Ghidra/Features/Base/ghidra_scripts
+    /opt/ghidra_home/Ghidra/Features/DecompilerDependent/ghidra_scripts
+    /opt/ghidra_home/Ghidra/Features/FunctionID/ghidra_scripts
+    /opt/ghidra_home/Ghidra/Features/SystemEmulation/ghidra_scripts
+    /opt/GSM/shannon_ghidra_scripts
+    /opt/ghidra_home/Ghidra/Features/Decompiler/ghidra_scripts
+    /opt/ghidra_home/Ghidra/Processors/Atmel/ghidra_scripts
+    /opt/ghidra_home/Ghidra/Debug/Debugger-rmi-trace/ghidra_scripts
+    /opt/ghidra_home/Ghidra/Debug/Debugger/ghidra_scripts
+    /opt/ghidra_home/Ghidra/Features/BSim/ghidra_scripts
+    /opt/ghidra_home/Ghidra/Processors/8051/ghidra_scripts
+    /opt/ghidra_home/Ghidra/Processors/JVM/ghidra_scripts
+    /opt/ghidra_home/Ghidra/Processors/PIC/ghidra_scripts
+    /opt/ghidra_home/Ghidra/Features/FileFormats/ghidra_scripts
+    /opt/ghidra_home/Ghidra/Features/PyGhidra/ghidra_scripts
+    /opt/ghidra_home/Ghidra/Features/MicrosoftCodeAnalyzer/ghidra_scripts
+    /opt/ghidra_home/Ghidra/Features/GnuDemangler/ghidra_scripts
+    /opt/ghidra_home/Ghidra/Features/PDB/ghidra_scripts
+    /opt/ghidra_home/Ghidra/Features/WildcardAssembler/ghidra_scripts
+    /opt/ghidra_home/Ghidra/Features/SwiftDemangler/ghidra_scripts (HeadlessAnalyzer)  
+INFO  HEADLESS: execution starts (HeadlessAnalyzer)  
+INFO  Creating project: /opt/GSM/shannon_ghidra_proj/shannon (HeadlessAnalyzer)  
+INFO  Creating project: /opt/GSM/shannon_ghidra_proj/shannon (DefaultProject)  
+INFO  REPORT: Processing input files:  (HeadlessAnalyzer)  
+INFO       project: /opt/GSM/shannon_ghidra_proj/shannon (HeadlessAnalyzer)  
+INFO  IMPORTING: file:///opt/GSM/shannon_ghidra_scripts/shannon_main.bin (HeadlessAnalyzer)  
+INFO  Successfully applied "-loader-baseAddr" to "Base Address" (old: "null", new: "0x40010000") (ProgramLoader)  
+INFO  Using Loader: Raw Binary (ProgramLoader)  
+INFO  Using Language/Compiler: ARM:LE:32:v7:default (ProgramLoader)  
+INFO  Using Library Search Path: [., /bin, /lib, /lib64, /lib/x86_64-linux-gnu, /lib/aarch64-linux-gnu, /usr/bin, /usr/lib, /usr/X11R6/bin, /usr/X11R6/lib, /usr/local/lib, /usr/java/packages/lib, /usr/lib/x86_64-linux-gnu/jni, /usr/lib/x86_64-linux-gnu, /usr/lib/jni] (ProgramLoader)  
+INFO  IMPORTING: Loaded 0 additional files (HeadlessAnalyzer)  
+INFO  ANALYZING all memory and code: file:///opt/GSM/shannon_ghidra_scripts/shannon_main.bin (HeadlessAnalyzer)  
+WARN  Decompiling 424f17a8, pcode error at 424f17ac: Unable to resolve constructor at 424f17ac (DecompileCallback)  
+ERROR VarnodeContext: out of address spaces at @412646f6 for: r0-412646f6 (VarnodeContext)  
+ERROR VarnodeContext: out of address spaces at @409daf44 for: r2-409daf44 (VarnodeContext)  
+ERROR VarnodeContext: out of address spaces at @412a3b1a for: r0-412a3b1a (VarnodeContext)  
+ERROR VarnodeContext: out of address spaces at @41292e18 for: r0-41292e18 (VarnodeContext)  
+WARN  Decompiling 424b43e8, pcode error at 424b3a50: Unable to resolve constructor at 424b3a50 (DecompileCallback)  
+WARN  Decompiling 41477a74, pcode error at 4143fce0: Unable to resolve constructor at 4143fce0 (DecompileCallback)  
+WARN  Decompiling 413ebeb4, pcode error at 41412f90: Unable to resolve constructor at 41412f90 (DecompileCallback)  
+WARN  Decompiling 40e774fe, pcode error at 40e777f6: Unable to resolve constructor at 40e777f6 (DecompileCallback)  
+WARN  Decompiling 40e774fe, pcode error at 40e77966: Unable to resolve constructor at 40e77966 (DecompileCallback)  
+WARN  Decompiling 40e774fe, pcode error at 40e77830: Unable to resolve constructor at 40e77830 (DecompileCallback)  
+WARN  Decompiling 40e774fe, pcode error at 40e77836: Unable to resolve constructor at 40e77836 (DecompileCallback)  
+WARN  Decompiling 40e774fe, pcode error at 40e77994: Unable to resolve constructor at 40e77994 (DecompileCallback)  
+WARN  Decompiling 40e774fe, pcode error at 40e77814: Unable to resolve constructor at 40e77814 (DecompileCallback)  
+INFO  Packed database cache: /var/tmp/root-ghidra/packed-db-cache (PackedDatabaseCache)  
+INFO  Applied data type archive: generic_clib (ApplyDataArchiveAnalyzer)  
+ERROR VarnodeContext: out of address spaces at @412646f6 for: r0-412646f6 (VarnodeContext)  
+ERROR VarnodeContext: out of address spaces at @409dbe3a for: r1-409dbe3a (VarnodeContext)  
+ERROR VarnodeContext: out of address spaces at @412a3b1a for: r0-412a3b1a (VarnodeContext)  
+ERROR VarnodeContext: out of address spaces at @41292e18 for: r0-41292e18 (VarnodeContext)  
+INFO  -----------------------------------------------------
+    ARM Constant Reference Analyzer           76.515 secs
+    ARM Symbol                                 0.000 secs
+    ASCII Strings                              5.424 secs
+    Apply Data Archives                        0.402 secs
+    Call-Fixup Installer                       1.476 secs
+    Create Address Tables                      2.723 secs
+    Create Address Tables - One Time          26.028 secs
+    Create Function                           11.990 secs
+    Data Reference                             3.369 secs
+    Decompiler Switch Analysis               314.195 secs
+    Demangler GNU                              0.066 secs
+    Disassemble                               98.566 secs
+    Disassemble Entry Points                   0.001 secs
+    Embedded Media                             0.121 secs
+    External Entry References                  0.001 secs
+    Function ID                                0.009 secs
+    Function Start Pre Search                  0.168 secs
+    Function Start Search                      0.904 secs
+    Function Start Search After Code           4.679 secs
+    Function Start Search After Data           0.262 secs
+    Function Start Search delayed - One Time   0.686 secs
+    Non-Returning Functions - Discovered      10.011 secs
+    Reference                                 34.033 secs
+    Shared Return Calls                        3.618 secs
+    Stack                                     68.967 secs
+    Subroutine References                     26.622 secs
+    Subroutine References - One Time           0.001 secs
+-----------------------------------------------------
+     Total Time   690 secs
+-----------------------------------------------------
+ (AutoAnalysisManager)  
+INFO  REPORT: Analysis succeeded for file: file:///opt/GSM/shannon_ghidra_scripts/shannon_main.bin (HeadlessAnalyzer)  
+INFO  REPORT: Execute script: dsp_re.py  (HeadlessAnalyzer)  
+ERROR  (HeadlessAnalyzer)  
+ERROR REPORT SCRIPT ERROR: dsp_re.py : Ghidra was not started with PyGhidra. Python is not available (HeadlessAnalyzer) ghidra.app.script.GhidraScriptLoadException: Ghidra was not started with PyGhidra. Python is not available
+	at ghidra.pyghidra.PyGhidraScriptProvider.getScriptInstance(PyGhidraScriptProvider.java:75)
+	at ghidra.app.util.headless.HeadlessAnalyzer.runScriptsList(HeadlessAnalyzer.java:917)
+	at ghidra.app.util.headless.HeadlessAnalyzer.analyzeProgram(HeadlessAnalyzer.java:1093)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processFileWithImport(HeadlessAnalyzer.java:1591)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processWithLoader(HeadlessAnalyzer.java:1751)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processWithImport(HeadlessAnalyzer.java:1692)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processWithImport(HeadlessAnalyzer.java:1776)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processLocal(HeadlessAnalyzer.java:452)
+	at ghidra.app.util.headless.AnalyzeHeadless.launch(AnalyzeHeadless.java:199)
+	at ghidra.GhidraLauncher.launch(GhidraLauncher.java:81)
+	at ghidra.Ghidra.main(Ghidra.java:54)
+ 
+INFO  ANALYZING changes made by post scripts: file:///opt/GSM/shannon_ghidra_scripts/shannon_main.bin (HeadlessAnalyzer)  
+INFO  REPORT: Post-analysis succeeded for file: file:///opt/GSM/shannon_ghidra_scripts/shannon_main.bin (HeadlessAnalyzer)  
+INFO  /shannon_main.bin: file created (root) (LocalFileSystem)  
+INFO  REPORT: Save succeeded for: /shannon_main.bin (shannon:/shannon_main.bin) (HeadlessAnalyzer)  
+INFO  REPORT: Import succeeded (HeadlessAnalyzer)  

@@ -1,0 +1,116 @@
+openjdk version "21.0.12.1" 2026-08-18
+OpenJDK Runtime Environment (build 21.0.12.1+1-1-24.04.4-Ubuntu)
+OpenJDK 64-Bit Server VM (build 21.0.12.1+1-1-24.04.4-Ubuntu, mixed mode)
+INFO  Using log config file: jar:file:/opt/ghidra_home/Ghidra/Framework/Generic/lib/Generic.jar!/generic.log4j.xml (LoggingInitialization)  
+INFO  Using log file: /root/.config/ghidra/ghidra_12.1.4_PUBLIC/application.log (LoggingInitialization)  
+INFO  Loading user preferences: /root/.config/ghidra/ghidra_12.1.4_PUBLIC/preferences (Preferences)  
+INFO  Searching for classes... (ClassSearcher)  
+INFO  Class search complete (395 ms) (ClassSearcher)  
+INFO  Initializing SSL Context (DefaultSSLContextInitializer)  
+INFO  Initializing Random Number Generator... (SecureRandomFactory)  
+INFO  Random Number Generator initialization complete: NativePRNGNonBlocking (SecureRandomFactory)  
+INFO  Trust manager disabled, cacerts have not been set (DefaultTrustManagerFactory)  
+INFO  Headless startup complete (971 ms) (AnalyzeHeadless)  
+INFO  Class searcher loaded 59 extension points (20 false positives) (ClassSearcher)  
+INFO  HEADLESS Script Paths:
+    /opt/ghidra_home/Ghidra/Processors/DATA/ghidra_scripts
+    /opt/ghidra_home/Ghidra/Features/VersionTracking/ghidra_scripts
+    /opt/ghidra_home/Ghidra/Features/BytePatterns/ghidra_scripts
+    /opt/ghidra_home/Ghidra/Features/Base/ghidra_scripts
+    /opt/ghidra_home/Ghidra/Features/DecompilerDependent/ghidra_scripts
+    /opt/ghidra_home/Ghidra/Features/FunctionID/ghidra_scripts
+    /opt/ghidra_home/Ghidra/Features/SystemEmulation/ghidra_scripts
+    /opt/GSM/shannon_ghidra_scripts
+    /opt/ghidra_home/Ghidra/Features/Decompiler/ghidra_scripts
+    /opt/ghidra_home/Ghidra/Processors/Atmel/ghidra_scripts
+    /opt/ghidra_home/Ghidra/Debug/Debugger-rmi-trace/ghidra_scripts
+    /opt/ghidra_home/Ghidra/Debug/Debugger/ghidra_scripts
+    /opt/ghidra_home/Ghidra/Features/BSim/ghidra_scripts
+    /opt/ghidra_home/Ghidra/Processors/8051/ghidra_scripts
+    /opt/ghidra_home/Ghidra/Processors/JVM/ghidra_scripts
+    /opt/ghidra_home/Ghidra/Processors/PIC/ghidra_scripts
+    /opt/ghidra_home/Ghidra/Features/FileFormats/ghidra_scripts
+    /opt/ghidra_home/Ghidra/Features/PyGhidra/ghidra_scripts
+    /opt/ghidra_home/Ghidra/Features/MicrosoftCodeAnalyzer/ghidra_scripts
+    /opt/ghidra_home/Ghidra/Features/GnuDemangler/ghidra_scripts
+    /opt/ghidra_home/Ghidra/Features/PDB/ghidra_scripts
+    /opt/ghidra_home/Ghidra/Features/WildcardAssembler/ghidra_scripts
+    /opt/ghidra_home/Ghidra/Features/SwiftDemangler/ghidra_scripts (HeadlessAnalyzer)  
+INFO  HEADLESS: execution starts (HeadlessAnalyzer)  
+INFO  Opening existing project: /opt/GSM/shannon_ghidra_proj/shannon (HeadlessAnalyzer)  
+INFO  Opening project: /opt/GSM/shannon_ghidra_proj/shannon (HeadlessProject)  
+INFO  REPORT: Processing project file: /shannon_main.bin (HeadlessAnalyzer)  
+INFO  REPORT: Execute script: dsp_re.java  (HeadlessAnalyzer)  
+INFO  SCRIPT: /opt/GSM/shannon_ghidra_scripts/dsp_re.java (HeadlessAnalyzer)  
+INFO  dsp_re.java> ==== DSP-RE REPORT ==== (GhidraScript)  
+INFO  dsp_re.java> 
+-- string xrefs -- (GhidraScript)  
+INFO  dsp_re.java> STR 'l1rt_fch.c' @ 404f2344 (0 refs) (GhidraScript)  
+INFO  dsp_re.java> STR 'l1rt_sch_sched.c' @ 404f2430 (0 refs) (GhidraScript)  
+INFO  dsp_re.java> STR 'l1x_srch_dsptch.c' @ 404f2970 (0 refs) (GhidraScript)  
+INFO  dsp_re.java> STR 'DSP_SUBSYS_CRTLDSP' @ 40b700cd (0 refs) (GhidraScript)  
+INFO  dsp_re.java> STR 'l1rt_fch.c' @ 41227a9b (0 refs) (GhidraScript)  
+INFO  dsp_re.java> STR 'l1rt_sch_sched.c' @ 4133bd6b (0 refs) (GhidraScript)  
+INFO  dsp_re.java> STR 'GSM DSP Init IPC' @ 4204f862 (0 refs) (GhidraScript)  
+INFO  dsp_re.java> STR 'GSM DSP Init IPC' @ 4204f8ae (0 refs) (GhidraScript)  
+INFO  dsp_re.java> STR 'GSM DSP Init IPC' @ 4204f8c4 (0 refs) (GhidraScript)  
+INFO  dsp_re.java> 
+-- callers of DSP routines -- (GhidraScript)  
+INFO  dsp_re.java> sync_check 0x40b6fccc : 0 refs (GhidraScript)  
+INFO  dsp_re.java> ring_reset 0x40b6fd00 : 0 refs (GhidraScript)  
+INFO  dsp_re.java> ring_consume 0x40b7040e : 0 refs (GhidraScript)  
+INFO  dsp_re.java> wait_dsp 0x40b6fc64 : 6 refs (GhidraScript)  
+INFO  dsp_re.java>     from 40b6fd5c -> FUN_40b6fd10 @ 40b6fd10 (GhidraScript)  
+INFO  dsp_re.java>     from 40b6fe7a -> FUN_40b6fd10 @ 40b6fd10 (GhidraScript)  
+INFO  dsp_re.java>     from 40b70272 -> FUN_40b70020 @ 40b70020 (GhidraScript)  
+INFO  dsp_re.java>     from 40b7028e -> FUN_40b70020 @ 40b70020 (GhidraScript)  
+INFO  dsp_re.java>     from 40c9100c -> FUN_40c90de6 @ 40c90de6 (GhidraScript)  
+INFO  dsp_re.java>     from 40c917e6 -> FUN_40c9158c @ 40c9158c (GhidraScript)  
+INFO  dsp_re.java> 
+-- refs to DSP base 0x47382000 -- (GhidraScript)  
+INFO  dsp_re.java> 4 direct refs (GhidraScript)  
+INFO  dsp_re.java>     40b6fe88 -> FUN_40b6fd10 @ 40b6fd10 (GhidraScript)  
+INFO  dsp_re.java>     40b6fea0 -> FUN_40b6fd10 @ 40b6fd10 (GhidraScript)  
+INFO  dsp_re.java>     424652c8 -> FUN_42465278 @ 42465278 (GhidraScript)  
+INFO  dsp_re.java>     424650ea -> FUN_4246509c @ 4246509c (GhidraScript)  
+INFO  dsp_re.java> 
+-- decompilation -- (GhidraScript)  
+INFO  dsp_re.java> no function at 0x40b6fccc (GhidraScript)  
+INFO  dsp_re.java> no function at 0x40b6fd00 (GhidraScript)  
+INFO  dsp_re.java> 
+### ring_consume (FUN_40b703fc) ### (GhidraScript)  
+INFO  dsp_re.java> 
+int FUN_40b703fc(void)
+
+{
+  short sVar1;
+  int iVar2;
+  int iVar3;
+  int iVar4;
+  int iVar5;
+  
+  iVar5 = 0;
+  iVar4 = 0;
+  if (*DAT_40b705d8 == 0) {
+    return -1;
+  }
+  sVar1 = *(short *)(DAT_40b705dc + 100);
+  iVar2 = (int)*(short *)(DAT_40b705dc + 0x66);
+  if (sVar1 == iVar2) {
+    return *(int *)(DAT_40b705dc + iVar2 * 4 + 0x68);
+  }
+  do {
+    iVar4 = iVar4 + 1;
+    iVar5 = iVar5 + *(int *)(DAT_40b705dc + iVar2 * 4 + 0x68);
+    iVar2 = iVar2 + 1;
+    iVar3 = (int)((ulonglong)((longlong)DAT_40b705e0 * (longlong)iVar2 + ((longlong)iVar2 << 0x20))
+                 >> 0x20);
+    iVar2 = iVar2 + ((iVar3 >> 4) - (iVar3 >> 0x1f)) * -0x1e;
+  } while (sVar1 != iVar2);
+  *(short *)(DAT_40b705dc + 0x66) = sVar1;
+  return iVar5 / iVar4;
+}
+
+ (GhidraScript)  
+INFO  dsp_re.java> ==== END ==== (GhidraScript)  
+INFO  REPORT: Save succeeded for processed file: /shannon_main.bin (HeadlessAnalyzer)  
